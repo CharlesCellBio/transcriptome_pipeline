@@ -76,8 +76,10 @@ data.processing = function(raw_data) {
         IBS
     }
 
-    PCA = function(X) {}
-
+    PCA = function(X) {
+        prcomp(TS19, center=T, scale=T)
+    }
+    
     return master.structure(raw_data)
 }
 
