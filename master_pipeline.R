@@ -1,4 +1,11 @@
-data.collection = function(x.name,
+my_pipeline = function(X) {
+    X %>%
+    data.collection %>%
+    data.processing %>%
+    data.analysis %>%
+    data.relevant.output
+    
+    data.collection = function(x.name,
     sample.path = NULL, gather.sample=NULL, format.sample=NULL, select.from.sample=NULL, merge.format=NULL, normalize.WS.data=NULL){
 
     master.structure = function(y.name) {
