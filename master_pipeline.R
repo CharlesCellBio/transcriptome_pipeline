@@ -1,3 +1,5 @@
+library(tsne, data.table, magrittr, clusterone...)
+
 my_pipeline = function(x.name) {
 
     my_pipeline_structure = function(X){
