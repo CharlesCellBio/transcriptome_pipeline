@@ -1,4 +1,19 @@
-library(tsne, data.table, magrittr, clusterone...)
+#for data in files named in the style "my.DATA_X.matrix.tsv", create a list such as ["DATA_A", "DATA_B", "DATA_C"].
+#example run-script
+## my_data = ["DATA_A", "DATA_B", "DATA_C"]
+## ws.packages.efficient();
+## my_pipeline(my_data);
+
+
+ws.packages.efficient = function(X) {
+update.packaes();
+rp = c("cluster", "data.table", "magrittr", "tsne");
+ip = names(installed.packages()[, "Package"]);
+install.packages(rp
+    [rp %in% ip]
+    , dependencies=TRUE);
+library(rp);
+}
 
 my_pipeline = function(x.name) {
 
